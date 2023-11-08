@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Error {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -19,7 +19,7 @@ public class Main {
 
             if (i == 0 || !s.substring(0, i).contains(current)) {
                 uniqueCount ++;
-                count ++;
+                count = 1;
 
                 for (int j = i +1; j < s.length(); j++) {
                     if (current.equals(s.substring(j, j+1))) {
